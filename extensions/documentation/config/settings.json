@@ -1,0 +1,54 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Documentation",
+      "description": "",
+      "termsOfService": "https://policies.google.com/terms?hl=en-US",
+      "contact": {
+        "name": "TEAM",
+        "email": "support@hspace.biz",
+        "url": "hspace-cms.hspace.biz"
+      },
+      "license": {
+        "name": "Apache 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+      }
+    },
+    "x-strapi-config": {
+      "path": "/docs",
+      "showGeneratedFiles": true,
+      "pluginsForWhichToGenerateDoc": [
+        "email",
+        "upload",
+        "users-permissions"
+      ]
+    },
+    "servers": [
+      {
+        "url": "http://localhost:1337",
+        "description": "Development server"
+      },
+      {
+        "url": "https://hspace-cms.herokuapp.com/",
+        "description": "Staging server"
+      },
+      {
+        "url": "https://hspace-cms.herokuapp.com/",
+        "description": "Production server"
+      }
+    ],
+    "externalDocs": {
+      "description": "Find out more",
+      "url": "https://strapi.io/documentation/"
+    },
+    "security": [
+      {
+        "bearerAuth": []
+      }
+    ],
+    "paths": {},
+    "tags": [],
+    "components": {}
+  }
+  
